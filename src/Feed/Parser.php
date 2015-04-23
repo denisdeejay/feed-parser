@@ -168,7 +168,7 @@ class Parser {
         if(!is_null($itemsNodes)){
             foreach($itemsNodes as $node){
                 $item = array();
-                $item['title'] = isset($node['title']) ? (string) $node['title'] : null;
+                $item['title'] = isset($node->title) ? (string) $node->title : null;
                 $item['link'] = null;
                 $item['description'] = null;
                 $item['pubDate'] = null;
